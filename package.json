@@ -1,5 +1,5 @@
 {
-  "name": "front-end-assessment-react",
+  "name": "spacex-launches",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -60,5 +60,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^9.4.0"
   }
 }
