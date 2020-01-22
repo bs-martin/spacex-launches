@@ -18,7 +18,10 @@ const LaunchTable = ({ filters, launches, isLoading }) => {
   })
   return (
     <div className="table-responsive">
-      <table className={isLoading ? "LaunchTable loading" : "LaunchTable"}>
+      <table
+        className={isLoading ? "LaunchTable loading" : "LaunchTable"}
+        summary="A table of SpaceX launches"
+      >
         <thead>
           <tr>
             <th>Badge</th>

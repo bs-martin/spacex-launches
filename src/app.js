@@ -24,20 +24,23 @@ const App = () => {
 
   return (
     <div id="app" className="page-wrapper">
-      <h1>SpaceX Launches</h1>
+      <header>
+        <h1>SpaceX Launches</h1>
+      </header>
 
       <React.StrictMode>
         <LaunchHeader onRefreshButtonClick={() => getData()}></LaunchHeader>
-
-        {state.launches.length ? (
-          <LaunchTable
-            filters={state.filters}
-            launches={state.launches}
-            isLoading={state.isLoading}
-          ></LaunchTable>
-        ) : (
-          <h2>Loading SpaceX Launches...</h2>
-        )}
+        <main>
+          {state.launches.length ? (
+            <LaunchTable
+              filters={state.filters}
+              launches={state.launches}
+              isLoading={state.isLoading}
+            ></LaunchTable>
+          ) : (
+            <h2>Loading SpaceX Launches...</h2>
+          )}
+        </main>
       </React.StrictMode>
     </div>
   )

@@ -5,7 +5,7 @@ const LaunchRefreshButton = ({ onRefreshButtonClick, fill }) => {
   return (
     <div className="LaunchRefreshButton">
       <a onClick={onRefreshButtonClick}>
-        <img src={refreshIcon} />
+        <img src={refreshIcon} alt="Refresh" />
       </a>
     </div>
   )
