@@ -1,11 +1,13 @@
 # R&P Frontend Assessment - React
 
-Description...
+A sample app for R&P that displays launches from SpaceX.
 
 ## Installation
 
-Instructions...
+    $ git clone https://github.com/bs-martin/spacex-launches.git
+    $ cd spacex-launches
+    $ npm install
 
 ## Start Server
 
-Instructions...
+    $ npm start
