@@ -62,6 +62,6 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "@testing-library/react": "^9.4.0"
+    "react-axe": "^3.3.0"
   }
 }
