@@ -21,12 +21,12 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: geomanist;
-  font-size: 1.5rem;
 }
 
 .page-wrapper {
   max-width: 800px;
   margin: 0 auto;
+  font-size: 1.1rem;
 }
 
 h1 {
@@ -43,12 +43,13 @@ h2 {
   font-size: 3rem;
 }
 
-div.LaunchHeader {
+.LaunchHeader {
   display: flex;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+
   background-color: rgba(255, 255, 255, 0.2);
   padding: 10px 10px;
   color: #ffffff;
@@ -78,8 +79,18 @@ div.LaunchHeader {
   .LaunchRefreshButton a:hover {
     filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
   }
+
   .LaunchToggleFilter {
     text-transform: uppercase;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .LaunchToggleFilter input {
+    margin-right: 5px;
+    border-radius: 3px;
+    transform: scale(1.2);
   }
 }
 
@@ -94,9 +105,16 @@ table.LaunchTable {
   }
 
   th {
+    color: #425f75;
+    font-size: 1.2em;
     text-align: left;
     padding: 10px;
-    background-color: #eeeeee;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(160, 185, 209, 1) 100%
+    );
   }
 
   td {
